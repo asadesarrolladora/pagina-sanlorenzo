@@ -311,6 +311,37 @@ h6,
 .service-item:hover .service-text .btn {
     width: 112px;
 }
+/* service.html */
+
+/* Estilo base para el contenedor de detalles ocultos */
+.service-detail-hidden {
+    display: none; /* Oculto por defecto */
+    opacity: 0; /* Para una transición suave */
+    max-height: 0; /* Para una transición de altura */
+    overflow: hidden; /* Oculta el contenido desbordado durante la transición */
+    transition: opacity 0.5s ease-out, max-height 0.5s ease-out; /* Transición para un efecto de "agrandar" */
+}
+
+/* Estilo para cuando el contenedor de detalles está visible */
+.service-detail-visible {
+    display: block; /* Muestra el contenido */
+    opacity: 1; /* Completamente visible */
+    max-height: 1000px; /* Un valor lo suficientemente grande para mostrar todo el contenido (ajustar si es necesario) */
+    transition: opacity 0.5s ease-in, max-height 0.5s ease-in; /* Transición */
+}
+
+/* Opcional: Estilo para las imágenes dentro de los detalles */
+.service-detail-visible img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Para que coincidan con el estilo general */
+}
+
+/* Opcional: Centrar el botón "Cerrar" si lo deseas */
+.service-detail-visible button {
+    display: block;
+    margin: 0 auto;
+}
 
 
 /*** Project Portfolio ***/
