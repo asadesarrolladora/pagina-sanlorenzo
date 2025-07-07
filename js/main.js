@@ -74,6 +74,35 @@
         ]
     });
 
+    // En tu archivo js/main.js o dentro de una etiqueta <script> en service.html
+
+function toggleServiceDetail(detailId) {
+    const detailElement = document.getElementById(detailId);
+    if (detailElement) {
+        if (detailElement.classList.contains('service-detail-visible')) {
+            // Si está visible, lo ocultamos
+            detailElement.classList.remove('service-detail-visible');
+            detailElement.classList.add('service-detail-hidden');
+        } else {
+            // Si está oculto, lo mostramos
+            // Opcional: Ocultar otros detalles abiertos para que solo uno esté visible a la vez
+            // let openDetails = document.querySelectorAll('.service-detail-visible');
+            // openDetails.forEach(function(detail) {
+            //     detail.classList.remove('service-detail-visible');
+            //     detail.classList.add('service-detail-hidden');
+            // });
+
+            detailElement.classList.remove('service-detail-hidden');
+            detailElement.classList.add('service-detail-visible');
+
+            // Opcional: Desplazarse al elemento recién expandido
+            detailElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    }
+}
+
+
+
     
 })(jQuery);
 
