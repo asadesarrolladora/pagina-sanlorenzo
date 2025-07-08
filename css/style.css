@@ -551,3 +551,53 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
+
+    /* El body y la fuente general podrían seguir siendo globales si quieres */
+    body {
+        font-family: 'Inter', sans-serif;
+        /* background-color: #f0f2f5; <-- Esto podría ir en tu CSS principal si ya tienes uno */
+    }
+
+    /* Ahora, los estilos específicos del formulario se aplican solo dentro de #mi-formulario-presupuesto */
+    #mi-formulario-presupuesto .form-floating input,
+    #mi-formulario-presupuesto .form-floating textarea,
+    #mi-formulario-presupuesto .form-floating select {
+        padding-top: 1.625rem;
+        padding-bottom: 0.625rem;
+        border: none;
+        box-shadow: none;
+    }
+    #mi-formulario-presupuesto .form-floating label {
+        padding-top: 0.625rem;
+        opacity: 0.6;
+    }
+    #mi-formulario-presupuesto .bg-white {
+        background-color: #ffffff;
+    }
+    #mi-formulario-presupuesto .rounded-lg {
+        border-radius: 0.75rem;
+    }
+    #mi-formulario-presupuesto .shadow-lg {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    #mi-formulario-presupuesto .btn-primary {
+        background-color: #4F46E5;
+        color: white;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+    #mi-formulario-presupuesto .btn-primary:hover {
+        background-color: #4338CA;
+    }
+    #mi-formulario-presupuesto .parallax-bg {
+        background-image: url('https://placehold.co/1920x1080/6366F1/FFFFFF?text=Fondo+Parallax');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 0;
+    }
