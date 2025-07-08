@@ -213,6 +213,12 @@ h6,
     color: var(--light);
 }
 
+.carousel-item {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically if the carousel-item has a defined height */
+}
+
 
 /*** Top Feature ***/
 @media (min-width: 991.98px) {
