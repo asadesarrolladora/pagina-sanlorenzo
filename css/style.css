@@ -601,3 +601,47 @@ h6,
         justify-content: center;
         padding: 4rem 0;
     }
+
+    /* Estilos por defecto para pantallas grandes (o el tamaño actual de tu H1) */
+/* Puedes dejar que H1 tome su tamaño por defecto si te gusta para escritorio, */
+/* o definir un font-size específico aquí si prefieres. */
+.navbar-title-responsive {
+    /* Si quieres un tamaño fijo para escritorio que sea un poco menor que el default H1,
+       puedes usar algo como: */
+    /* font-size: 2.3rem; */ /* Ajusta este valor si es necesario para escritorio */
+
+    /* Para asegurar que no se corta en líneas antes del media query, si el texto es largo */
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    overflow: hidden;    /* Oculta cualquier parte que se desborde */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es cortado */
+}
+
+
+/* Media Query para pantallas pequeñas (celulares) */
+/* Aquí definimos el tamaño de fuente que se aplicará cuando la pantalla sea más pequeña */
+@media (max-width: 767.98px) { /* breakpoint para dispositivos móviles pequeños (ej. hasta 768px) */
+    .navbar-title-responsive {
+        font-size: 1.5rem; /* Prueba con este valor, ajusta según veas en el celular */
+        /* Puedes ir probando 1.6rem, 1.7rem, 1.8rem, etc. */
+        /* Asegúrate de que este tamaño permita que el texto quepa en una línea */
+
+        /* Puedes volver a permitir que el texto se ajuste en múltiples líneas si cabe */
+        white-space: normal;
+        text-overflow: unset;
+    }
+}
+
+/* Puedes añadir otro media query si necesitas un ajuste diferente para tablets (entre 768px y 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-title-responsive {
+        font-size: 1.8rem; /* Un tamaño intermedio para tablets */
+    }
+}
+
+/* O puedes usar un solo media query que afecte desde cierto tamaño hacia abajo */
+/* Por ejemplo, para todo lo que sea menor a un tamaño específico */
+/* @media (max-width: 991.98px) { */ /* Esto afectaría a tablets y móviles */
+/* .navbar-title-responsive { */
+/* font-size: 1.8rem; */
+/* } */
+/* } */
