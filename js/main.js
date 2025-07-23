@@ -137,8 +137,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-
     
 })(jQuery);
 
