@@ -108,34 +108,36 @@ document.addEventListener('DOMContentLoaded', function() {
     // Obtener el hash de la URL (ej. "#industrial")
     const hash = window.location.hash;
 
-    // Si existe un hash en la URL
-    if (hash) {
-        // Eliminar la clase 'active' de todas las pestañas y paneles
-        document.querySelectorAll('.nav-link.active').forEach(function(tab) {
-            tab.classList.remove('active');
-            tab.setAttribute('aria-selected', 'false');
-        });
-        document.querySelectorAll('.tab-pane.show.active').forEach(function(pane) {
-            pane.classList.remove('show', 'active');
-        });
-
+    // Si existe un hash en la URL Y no es solo '#'
+    if (hash && hash !== '#') {
         // Encontrar el botón de la pestaña que corresponde al hash
-        // El selector busca un botón con data-bs-target igual al hash
         const targetTabButton = document.querySelector(`button[data-bs-target="${hash}"]`);
 
         if (targetTabButton) {
-            // Activar la pestaña
+            // **IMPORTANTE: Primero, ocultar la pestaña activa actual si no es la que queremos mostrar**
+            // Si la pestaña "Residencial" (o cualquier otra por defecto) está activa, la desactivamos
+            const defaultActiveTabButton = document.querySelector('#designTabs .nav-link.active');
+            const defaultActiveTabPane = document.querySelector('#designTabsContent .tab-pane.show.active');
+
+            if (defaultActiveTabButton && defaultActiveTabButton !== targetTabButton) {
+                // Si hay una pestaña activa por defecto Y no es la que queremos activar
+                const bsDefaultTab = new bootstrap.Tab(defaultActiveTabButton);
+                bsDefaultTab.hide(); // Oculta la pestaña activa por defecto
+            }
+
+            // Activar la pestaña deseada
             const bsTab = new bootstrap.Tab(targetTabButton);
             bsTab.show();
 
             // Opcional: Desplazarse suavemente a la sección de las pestañas
-            const tabSection = document.getElementById('dconstrucion'); // Asegúrate de que este ID sea el correcto para tu contenedor de pestañas
+            const tabSection = document.getElementById('dconstrucion');
             if (tabSection) {
                 tabSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         }
     }
 });
+
 
     
 })(jQuery);
