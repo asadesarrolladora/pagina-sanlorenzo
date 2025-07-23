@@ -114,20 +114,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const targetTabButton = document.querySelector(`button[data-bs-target="${hash}"]`);
 
         if (targetTabButton) {
-            // **IMPORTANTE: Primero, ocultar la pestaña activa actual si no es la que queremos mostrar**
-            // Si la pestaña "Residencial" (o cualquier otra por defecto) está activa, la desactivamos
-            const defaultActiveTabButton = document.querySelector('#designTabs .nav-link.active');
-            const defaultActiveTabPane = document.querySelector('#designTabsContent .tab-pane.show.active');
-
-            if (defaultActiveTabButton && defaultActiveTabButton !== targetTabButton) {
-                // Si hay una pestaña activa por defecto Y no es la que queremos activar
-                const bsDefaultTab = new bootstrap.Tab(defaultActiveTabButton);
-                bsDefaultTab.hide(); // Oculta la pestaña activa por defecto
-            }
-
             // Activar la pestaña deseada
             const bsTab = new bootstrap.Tab(targetTabButton);
-            bsTab.show();
+            bsTab.show(); // This line is key to explicitly showing the tab
 
             // Opcional: Desplazarse suavemente a la sección de las pestañas
             const tabSection = document.getElementById('dconstrucion');
