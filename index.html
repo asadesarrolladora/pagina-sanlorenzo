@@ -8,8 +8,6 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="img/favicon.ico" rel="icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,6 +46,8 @@
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <span>Síguenos:</span>
                     <a class="btn btn-link text-light" href="https://www.facebook.com/profile.php?id=100063714995103"><i class="fab fa-facebook-f"></i></a>
+                    <!--<a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>-->
                     <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -62,9 +62,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Inicio</a>
-                <a href="about.html" class="nav-item nav-link">Acerca de</a>
-                <a href="service.html" class="nav-item nav-link active">Servicios</a>
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                <a href="service.html" class="nav-item nav-link">Servicios</a>
                 <a href="project.html" class="nav-item nav-link">Proyectos</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
@@ -75,213 +75,340 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="quote.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Obtener un Presupuesto<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="quote.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Obtén una Cotización<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">Servicios</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item"><a href="feature.html">Páginas</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Servicios</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-end" id="vpasto"> <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div id="carouselPaisajismo" class="carousel slide" data-bs-ride="carousel"> <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselPaisajismo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselPaisajismo" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselPaisajismo" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner rounded">
-                            <div class="carousel-item active">
-                                <img src="img/paisajismo1.jpg" class="d-block w-100 img-fluid" alt="Jardín principal">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/palmas1.jpg" class="d-block w-100 img-fluid" alt="Detalle de plantas">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/principal.jpg" class="d-block w-100 img-fluid" alt="Diseño de paisaje">
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/portada3.jpg" alt="Imagen">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">Haz de Tu Hogar un Jardín</h1>
+                                    <a href="service.html" class="btn btn-primary py-sm-3 px-sm-4">Explorar Más</a>
+                                </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPaisajismo" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPaisajismo" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/portada4.jpg" alt="Imagen">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7">
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">Crea tu Propio Pequeño Jardín en Casa</h1>
+                                    <a href="service.html" class="btn btn-primary py-sm-3 px-sm-4">Explorar Más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/principal.jpg">
+                </div>
                 <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="display-5 mb-4">Venta de Pasto en Rollo</h1>
-                    <p class="mb-4">El paisajismo es mucho más que plantar árboles o flores. Es el arte de transformar espacios al aire libre en entornos armónicos, funcionales y estéticamente únicos. En <b>Centro Jardinero San Lorenzo</b>, combinamos creatividad, conocimiento botánico y sensibilidad ambiental para crear jardines que reflejan tu estilo de vida y se integran perfectamente al entorno.</p>
+                    <h1 class="display-1 text-primary mb-0">15</h1>
+                    <p class="text-primary mb-4">Años de Experiencia</p>
+                    <h1 class="display-5 mb-4">Hacemos de tu Hogar un Jardín</h1>
+                    <p class="mb-4">En <b>Centro Jardinero San Lorenzo</b>, transformamos tus espacios en verdaderos oasis verdes. Desde el diseño hasta el mantenimiento, cuidamos cada detalle para que disfrutes de la belleza y armonía que solo un jardín bien cuidado puede ofrecer.</p>
+                    <a class="btn btn-primary py-3 px-4" href="service.html">Explorar Más</a>
+                </div>
+                <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-5">
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Comprometidos con la Excelencia en Jardinería y Paisajismo</h4>
+                                <span>La pasión por la naturaleza se combina con la formación especializada y la búsqueda constante de la excelencia. Y en <b>Centro Jardinero San Lorenzo</b>, contamos con formación en técnicas en jardinería y paisajismo, respaldada por certificaciones reconocidas a nivel nacional</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Nuestros profesionales están capacitados en áreas como:</h4>
+                                <span>Jardinería ornamental y ecológica, Paisajismo sostenible, Mantenimiento de áreas verdes</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <div class="container-xxl py-5">
-        <div class="container-fluid"> <div class="row g-5 align-items-end" id="dconstrucion">
-                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="display-5 mb-4">Diseño y Construcción de Jardines</h1>
-                    <p class="mb-4">En <b>Centro Jardinero San Lorenzo</b>, creamos espacios verdes que transforman cualquier entorno. Nuestro servicio integral abarca desde la conceptualización hasta la ejecución, asegurando resultados que superan tus expectativas. Ya sea un hogar, un negocio o un complejo industrial, tenemos la experiencia para diseñar el jardín perfecto para ti.</p>
-
-                    <ul class="nav nav-tabs mb-3" id="designTabs" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="residencial-tab" data-bs-toggle="tab" data-bs-target="#residencial" type="button" role="tab" aria-controls="residencial" aria-selected="true">Diseño Residencial</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="comercial-tab" data-bs-toggle="tab" data-bs-target="#comercial" type="button" role="tab" aria-controls="comercial" aria-selected="false">Diseño Comercial</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="industrial-tab" data-bs-toggle="tab" data-bs-target="#industrial" type="button" role="tab" aria-controls="industrial" aria-selected="false">Diseño Industrial</button>
-                        </li>
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">¡Por qué Elegirnos!</p>
+                    <h1 class="display-5 mb-4">¡Razones por las que la Gente nos Elige!</h1>
+                    <p class="mb-4">Pasión por la naturaleza, compromiso con tu espacio
+Somos un equipo de jardineros profesionales con años de experiencia en diseño, creación y mantenimiento de jardines. Nos mueve el amor por las plantas y el deseo de crear ambientes verdes que inspiren, relajen y embellezcan tu vida diaria. Trabajamos con responsabilidad, creatividad y respeto por el entorno.</p>
+                    <a class="btn btn-primary py-3 px-4" href="service.html">Explorar Más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Nuestros Servicios</p>
+                <h1 class="display-5 mb-5">Servicios que Ofrecemos para Ti</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/paisajismo1.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/icon/icon-3.png" alt="Icono">
+                            </div>
+                            <h4 class="mb-3">Venta de Pasto en Rollo</h4>
+                            <p class="mb-4">El paisajismo es mucho más que plantar árboles o flores. Es el arte de transformar espacios al aire libre en entornos armónicos, funcionales y estéticamente únicos.</p>
+                            <a class="btn btn-sm" href="service.html#vpasto"><i class="fa fa-plus text-primary me-2"></i>Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/mto1.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icono">
+                            </div>
+                            <h4 class="mb-3">Diseño y Construción de Jardines</h4>
+                            <p class="mb-4">La poda no es solo cuestión estética: es una técnica clave para mantener la salud, la forma y la floración de tus plantas.</p>
+                            <a class="btn btn-sm" href="service.html#dconstrucion"><i class="fa fa-plus text-primary me-2"></i>Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/pasto3.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icono">
+                            </div>
+                            <h4 class="mb-3">Venta de Arboles y Plantas Comerciales</h4>
+                            <p class="mb-4">Verde instantáneo para tu jardín, patio o espacio exterior.</p>
+                            <a class="btn btn-sm" href="service.html#varboles"><i class="fa fa-plus text-primary me-2"></i>Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/mto2.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/icon/icon-4.png" alt="Icono">
+                            </div>
+                            <h4 class="mb-3">Servicio de Flete</h4>
+                            <p class="mb-4">Tu jardín siempre verde, limpio y saludable, un jardín bien cuidado no solo luce hermoso, también refleja armonía, salud y dedicación.</p>
+                            <a class="btn btn-sm" href="service.html#mtojardin"><i class="fa fa-plus text-primary me-2"></i>Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/fruta3.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/icon/icon-8.png" alt="Icono">
+                            </div>
+                            <h4 class="mb-3">Venta de Arboles Frutales</h4>
+                            <p class="mb-4">Llena tu jardín de vida, sabor y frescura Cultivar árboles frutales en casa no solo embellece tu espacio, también te permite disfrutar de frutas frescas.</p>
+                            <a class="btn btn-sm" href="service.html#arbfrutas"><i class="fa fa-plus text-primary me-2"></i>Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/jardineriares2.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/icon/icon-2.png" alt="Icono">
+                            </div>
+                            <h4 class="mb-3">Jardinería Recidencial</h4>
+                            <p class="mb-4">Cuidamos tu jardín como si fuera el nuestro, tu hogar merece un entorno verde que refleje tranquilidad, belleza y vida.</p>
+                            <a class="btn btn-sm" href="service.html#jardineriares"><i class="fa fa-plus text-primary me-2"></i>Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Nuestros Proyectos</p>
+                <h1 class="display-5 mb-5">Algunos de Nuestros Maravillosos Proyectos</h1>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">Todo</li>
+                        <li class="mx-2" data-filter=".first">Proyectos Completados</li>
+                        <li class="mx-2" data-filter=".second">Proyectos en Curso</li>
                     </ul>
-                    <div class="tab-content" id="designTabsContent">
-                        <div class="tab-pane fade show active" id="residencial" role="tabpanel" aria-labelledby="residencial-tab">
-                            <h3>Diseño Residencial</h3>
-                            <p>Nos especializamos en crear <b>jardines personalizados para hogares</b>, transformando tus espacios exteriores en extensiones armoniosas de tu vivienda. Desde pequeños balcones hasta grandes extensiones, diseñamos ambientes que reflejan tu estilo de vida y necesidades, combinando estética y funcionalidad. Incluimos diseño de patios, terrazas, jardines frontales y traseros, sistemas de riego, iluminación y una cuidadosa selección de plantas que se adapten a tu entorno y estilo de vida.</p>
-                            <p>Nuestro proceso comienza con una consulta detallada para entender tus deseos y el potencial de tu espacio. Luego, desarrollamos un concepto visual y un plan de acción para convertir tu visión en realidad, creando un oasis de tranquilidad justo en tu puerta.</p>
-
-                            <div id="carouselResidencial" class="carousel slide mt-4" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselResidencial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselResidencial" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselResidencial" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                                <div class="carousel-inner rounded">
-                                    <div class="carousel-item active">
-                                        <img src="img/residencial-1.jpeg" class="d-block w-100 img-fluid" alt="Jardín residencial moderno">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/residencial-2.jpeg" class="d-block w-100 img-fluid" alt="Patio con plantas y fuente">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/residencial-3.jpeg" class="d-block w-100 img-fluid" alt="Terraza con vegetación exuberante">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselResidencial" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Anterior</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselResidencial" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Siguiente</span>
-                                </button>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container">
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/paisajismo1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Paisajismo</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/paisajismo1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#paisajismo"><i class="fa fa-link"></i></a>
                             </div>
-                            </div>
-
-                        <div class="tab-pane fade" id="comercial" role="tabpanel" aria-labelledby="comercial-tab">
-                            <h3>Diseño Comercial</h3>
-                            <p>Creamos <b>espacios verdes atractivos y funcionales para negocios y empresas</b>. Un diseño paisajístico bien ejecutado puede mejorar significativamente la imagen de tu marca, atraer y retener clientes, y proporcionar un ambiente agradable y productivo para empleados y visitantes. Es ideal para restaurantes, hoteles, oficinas corporativas, centros comerciales, complejos de apartamentos y parques empresariales.</p>
-                            <p>Nos enfocamos en diseños que no solo embellecen, sino que también son fáciles de mantener y que reflejan la identidad de tu negocio. Desde entradas impactantes hasta áreas de descanso al aire libre, diseñamos soluciones que maximizan el impacto visual y la utilidad.</p>
-
-                            <div id="carouselComercial" class="carousel slide mt-4" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselComercial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselComercial" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselComercial" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                                <div class="carousel-inner rounded">
-                                    <div class="carousel-item active">
-                                        <img src="img/comercial-1.jpg" class="d-block w-100 img-fluid" alt="Entrada de oficina con paisajismo">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/comercial-2.jpg" class="d-block w-100 img-fluid" alt="Jardín interior en centro comercial">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/comercial-3.jpg" class="d-block w-100 img-fluid" alt="Área verde en hotel">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselComercial" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Anterior</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselComercial" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Siguiente</span>
-                                </button>
-                            </div>
-                            </div>
-
-                        <div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="industrial-tab">
-                            <h3>Diseño Industrial</h3>
-                            <p>Ofrecemos soluciones de paisajismo innovadoras para <b>áreas industriales y corporativas de gran escala</b>, enfocándonos en la sostenibilidad, la reducción del impacto ambiental y la mejora del entorno laboral. Diseñamos zonas verdes que pueden servir como barreras acústicas naturales, reguladores térmicos, o como espacios de esparcimiento que mejoran el bienestar del personal, integrando la naturaleza de forma estratégica en entornos de trabajo robustos.</p>
-                            <p>Nuestros diseños consideran la funcionalidad, la durabilidad y el bajo mantenimiento, adaptándose a las exigencias de los entornos industriales sin comprometer la estética. Contribuimos a crear un ambiente más verde y saludable, incluso en zonas de alta actividad.</p>
-
-                            <div id="carouselIndustrial" class="carousel slide mt-4" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselIndustrial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselIndustrial" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselIndustrial" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                                <div class="carousel-inner rounded">
-                                    <div class="carousel-item active">
-                                        <img src="img/industrial-1.jpg" class="d-block w-100 img-fluid" alt="Paisajismo en parque industrial">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/industrial-2.jpg" class="d-block w-100 img-fluid" alt="Jardín funcional en complejo industrial">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/industrial-3.jpg" class="d-block w-100 img-fluid" alt="Área verde para empleados en fábrica">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndustrial" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Anterior</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndustrial" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Siguiente</span>
-                                </button>
-                            </div>
-                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/mto1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Poda de Plantas</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#poda"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/pasto2.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Venta de Rollo de Pasto</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/rollo1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#pasto"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/mto2.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Mantenimiento de Jardines</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#mtojardin"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/frutal1.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Venta de Arboles Frutales</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/frutal1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#arbfrutas"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/jardineriares2.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Jardinería Residencial</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/jardineriar1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#jardineriares"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-5 align-items-end" id="mtojardin"> <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div id="carouselMtoJardin" class="carousel slide" data-bs-ride="carousel"> <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselMtoJardin" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselMtoJardin" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselMtoJardin" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></button>
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Nuestro Equipo</p>
+                <h1 class="display-5 mb-5">Miembros del Equipo Dedicados y Experimentados</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Doris Jordan</h4>
+                            <p class="text-primary">Diseñadora de Paisajes</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
-                        <div class="carousel-inner rounded">
-                            <div class="carousel-item active">
-                                <img src="img/mto1.jpg" class="d-block w-100 img-fluid" alt="Jardín principal">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/mto2.jpg" class="d-block w-100 img-fluid" alt="Detalle de plantas">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/mto3.jpg" class="d-block w-100 img-fluid" alt="Diseño de paisaje">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMtoJardin" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMtoJardin" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="display-5 mb-4">Venta de Arboles y Plantas Comerciales</h1>
-                    <p class="mb-4">Tu jardín siempre verde, limpio y saludable. Un jardín bien cuidado no solo luce hermoso, también refleja armonía, salud y dedicación. En <b>Centro Jardinero San Lorenzo</b>, ofrecemos un servicio completo de mantenimiento de jardines para que tú solo te preocupes por disfrutarlo.</p>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Johnny Ramirez</h4>
+                            <p class="text-primary">Diseñador de Jardines</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Diana Wagner</h4>
+                            <p class="text-primary">Jardinera Senior</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -298,20 +425,24 @@
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100063714995103"><i class="fab fa-facebook-f"></i></a>
-                        </div>
+                        <!--<a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>-->
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Servicios</h4>
                     <a class="btn btn-link" href="service.html#paisajismo">Paisajismo</a>
-                    <a class="btn btn-link" href="service.html#poda">Poda de plantas</a>
-                    <a class="btn btn-link" href="service.html#jardineriaurbana">Jardinería Urbana</a> <a class="btn btn-link" href="service.html#mtojardin">Mantenimiento de Jardines</a>
-                    <a class="btn btn-link" href="service.html#tecnologiaverde">Tecnología Verde</a> </div>
+                    <a class="btn btn-link" href="service.html#poda">Poda de Plantas</a>
+                    <a class="btn btn-link" href="service.html#pasto">Venta De Rollo de Pasto</a>
+                    <a class="btn btn-link" href="service.html#mtojardin">Mantenimiento de Jardines</a>
+                    <a class="btn btn-link" href="service.html#arbfrutas">Venta de Arboles Frutales</a>
+                    <a class="btn btn-link" href="service.html#jardineriares">Jardinería Residencial</a>
+                </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Enlaces Rápidos</h4>
-                    <a class="btn btn-link" href="">Acerca de Nosotros</a>
-                    <a class="btn btn-link" href="">Contáctanos</a>
-                    <a class="btn btn-link" href="">Nuestros Servicios</a>
-                    <a class="btn btn-link" href="">Términos y Condiciones</a>
+                    <a class="btn btn-link" href="about.html">Sobre Nosotros</a>
+                    <a class="btn btn-link" href="contact.html">Contáctanos</a>
+                    <a class="btn btn-link" href="terminos.html">Términos y Condiciones</a>
                     <a class="btn btn-link" href="">Soporte</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -319,17 +450,17 @@
                     <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                     <div class="position-relative w-100">
                         <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Tu correo electrónico">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Registrarse</button>
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribirse</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div> 
-    <div class="container-fluid copyright py-4">  
+    </div>
+    <div class="container-fluid copyright py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="index.html">Centro Jardinero San lorenzo</a>, Todos los Derechos Reservados.
+                    &copy; <a class="border-bottom" href="#">Centro Jardinero San Lorenzo</a>, Todos los Derechos Reservados.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     Diseñado por <a class="border-bottom" href="www.asadesarrolladora.com">Asa Desarrolladora</a>
