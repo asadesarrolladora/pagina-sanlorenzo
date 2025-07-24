@@ -105,18 +105,18 @@ function toggleServiceDetail(detailId) {
 //codigo para el botón de "Ver Más" en la sección de servicios
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Obtener el hash de la URL (ej. "#industrial")
+    // ... (Mantén tu código de spinner, WOW, sticky navbar, etc. arriba de esto) ...
+
     const hash = window.location.hash;
 
-    // Si existe un hash en la URL Y no es solo '#'
     if (hash && hash !== '#') {
-        // Encontrar el botón de la pestaña que corresponde al hash
         const targetTabButton = document.querySelector(`button[data-bs-target="${hash}"]`);
 
         if (targetTabButton) {
-            // Activar la pestaña deseada
+            // Usa la API de Bootstrap para mostrar la pestaña.
+            // Esto automáticamente oculta cualquier otra pestaña activa en el mismo grupo.
             const bsTab = new bootstrap.Tab(targetTabButton);
-            bsTab.show(); // This line is key to explicitly showing the tab
+            bsTab.show();
 
             // Opcional: Desplazarse suavemente a la sección de las pestañas
             const tabSection = document.getElementById('dconstrucion');
