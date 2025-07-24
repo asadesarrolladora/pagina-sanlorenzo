@@ -380,6 +380,35 @@
 
     <script src="js/main.js"></script>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const hash = window.location.hash;
+
+    if (hash && hash !== "#") {
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                const button = document.querySelector(`button[data-bs-target="${hash}"]`);
+                const content = document.querySelector(hash);
+
+                if (button && content) {
+                    // Activar el botón de la pestaña manualmente
+                    button.classList.add("active");
+                    const allTabs = document.querySelectorAll('.tab-pane');
+                    allTabs.forEach(tab => tab.classList.remove('show', 'active'));
+
+                    // Activar la pestaña
+                    content.classList.add("show", "active");
+
+                    // Scroll hacia la sección
+                    content.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            }, 300);
+        });
+    }
+    });
+    </script>
+
+
 </body>
 
 </html>
