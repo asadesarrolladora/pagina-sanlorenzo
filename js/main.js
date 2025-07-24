@@ -104,28 +104,27 @@ function toggleServiceDetail(detailId) {
 
 //codigo para el botón de "Ver Más" en la sección de servicios
 
-document.addEventListener('DOMContentLoaded', function() {
-    // ... (Mantén tu código de spinner, WOW, sticky navbar, etc. arriba de esto) ...
-
+document.addEventListener('DOMContentLoaded', function () {
     const hash = window.location.hash;
 
     if (hash && hash !== '#') {
-        const targetTabButton = document.querySelector(`button[data-bs-target="${hash}"]`);
+        setTimeout(() => {
+            const targetTabButton = document.querySelector(`button[data-bs-target="${hash}"]`);
 
-        if (targetTabButton) {
-            // Usa la API de Bootstrap para mostrar la pestaña.
-            // Esto automáticamente oculta cualquier otra pestaña activa en el mismo grupo.
-            const bsTab = new bootstrap.Tab(targetTabButton);
-            bsTab.show();
+            if (targetTabButton) {
+                const bsTab = new bootstrap.Tab(targetTabButton);
+                bsTab.show();
 
-            // Opcional: Desplazarse suavemente a la sección de las pestañas
-            const tabSection = document.querySelector(hash);
-            if (tabSection) {
-                tabSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // Scroll hacia la pestaña activa
+                const tabSection = document.querySelector(hash);
+                if (tabSection) {
+                    tabSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
             }
-        }
+        }, 300); // Esperamos 300ms para que Bootstrap cargue las pestañas
     }
 });
+
 
 
     
