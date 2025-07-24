@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             bsTab.show();
 
             // Opcional: Desplazarse suavemente a la sección de las pestañas
-            const tabSection = document.getElementById('dconstrucion');
+            const tabSection = document.querySelector(hash);
             if (tabSection) {
                 tabSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
