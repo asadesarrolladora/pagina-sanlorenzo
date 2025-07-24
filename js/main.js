@@ -108,20 +108,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const hash = window.location.hash;
 
     if (hash && hash !== '#') {
-        setTimeout(() => {
-            const targetTabButton = document.querySelector(`button[data-bs-target="${hash}"]`);
+        // Esperamos hasta que todo esté renderizado
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+                const targetTabButton = document.querySelector(`button[data-bs-target="${hash}"]`);
 
-            if (targetTabButton) {
-                const bsTab = new bootstrap.Tab(targetTabButton);
-                bsTab.show();
+                if (targetTabButton) {
+                    const bsTab = new bootstrap.Tab(targetTabButton);
+                    bsTab.show();
 
-                // Scroll hacia la pestaña activa
-                const tabSection = document.querySelector(hash);
-                if (tabSection) {
-                    tabSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Luego hacemos scroll al contenido
+                    const tabContent = document.querySelector(hash);
+                    if (tabContent) {
+                        tabContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
                 }
-            }
-        }, 300); // Esperamos 300ms para que Bootstrap cargue las pestañas
+            }, 200); // Espera extra por seguridad
+        });
     }
 });
 
