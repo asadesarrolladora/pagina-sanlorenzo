@@ -239,92 +239,105 @@ Somos un equipo de jardineros profesionales con años de experiencia en diseño,
             </div>
         </div>
     </div>
+    
+
     <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Nuestros Proyectos</p>
-                <h1 class="display-5 mb-5">Algunos de Nuestros Maravillosos Proyectos</h1>
-            </div>
-            <div class="row wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">Todo</li>
-                        <li class="mx-2" data-filter=".first">Proyectos Completados</li>
-                        <li class="mx-2" data-filter=".second">Proyectos en Curso</li>
+        <div class="container-fluid">
+            <div class="row g-5 align-items-end" id="dconstrucion">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="display-5 mb-4">Algunos de Nuestros Maravillosos Proyectos</h1>
+                    <p class="mb-4">En <b>Centro Jardinero San Lorenzo</b>, creamos espacios verdes que transforman cualquier entorno. Nuestro servicio integral abarca desde la conceptualización hasta la ejecución, asegurando resultados que superan tus expectativas. Ya sea un hogar, un negocio o un complejo industrial, tenemos la experiencia para diseñar el jardín perfecto para ti.</p>
+
+                    <ul class="nav nav-tabs mb-3" id="designTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="industrial-tab" data-bs-toggle="tab" data-bs-target="#industrial" type="button" role="tab" aria-controls="industrial" aria-selected="true">Diseño Industrial</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="residencial-tab" data-bs-toggle="tab" data-bs-target="#residencial" type="button" role="tab" aria-controls="residencial" aria-selected="false">Diseño Residencial</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="comercial-tab" data-bs-toggle="tab" data-bs-target="#comercial" type="button" role="tab" aria-controls="comercial" aria-selected="false">Diseño Comercial</button>
+                        </li>
                     </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/paisajismo1.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Paisajismo</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/paisajismo1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#paisajismo"><i class="fa fa-link"></i></a>
-                            </div>
+                    <div class="tab-content" id="designTabsContent">
+                        <div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="industrial-tab">
+                            <h3>Diseño Industrial</h3>
+                            <p>Ofrecemos soluciones de paisajismo innovadoras para <b>áreas industriales y corporativas de gran escala</b>, enfocándonos en la sostenibilidad, la reducción del impacto ambiental y la mejora del entorno laboral. Diseñamos zonas verdes que pueden servir como barreras acústicas naturales, reguladores térmicos, o como espacios de esparcimiento que mejoran el bienestar del personal, integrando la naturaleza de forma estratégica en entornos de trabajo robustos.</p>
+                            <p>Nuestros diseños consideran la funcionalidad, la durabilidad y el bajo mantenimiento, adaptándose a las exigencias de los entornos industriales sin comprometer la estética. Contribuimos a crear un ambiente más verde y saludable, incluso en zonas de alta actividad.</p>
+
+                            <div class="row g-3 mt-4">
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <a href="img/industrial-1.jpg" data-lightbox="industrial-gallery" data-title="Paisajismo en parque industrial">
+                                        <img src="img/industrial-1.jpg" class="img-fluid rounded shadow-sm" alt="Paisajismo en parque industrial">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <a href="img/industrial-2.jpg" data-lightbox="industrial-gallery" data-title="Jardín funcional en complejo industrial">
+                                        <img src="img/industrial-2.jpg" class="img-fluid rounded shadow-sm" alt="Jardín funcional en complejo industrial">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <a href="img/industrial-3.jpg" data-lightbox="industrial-gallery" data-title="Área verde para empleados en fábrica">
+                                        <img src="img/industrial-3.jpg" class="img-fluid rounded shadow-sm" alt="Área verde para empleados en fábrica">
+                                    </a>
+                                </div>
+                                </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/mto1.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Poda de Plantas</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#poda"><i class="fa fa-link"></i></a>
-                            </div>
+
+                        <div class="tab-pane fade show active" id="residencial" role="tabpanel" aria-labelledby="residencial-tab">
+                            <h3>Diseño Residencial</h3>
+                            <p>Nos especializamos en crear <b>jardines personalizados para hogares</b>, transformando tus espacios exteriores en extensiones armoniosas de tu vivienda. Desde pequeños balcones hasta grandes extensiones, diseñamos ambientes que reflejan tu estilo de vida y necesidades, combinando estética y funcionalidad. Incluimos diseño de patios, terrazas, jardines frontales y traseros, sistemas de riego, iluminación y una cuidadosa selección de plantas que se adapten a tu entorno y estilo de vida.</p>
+                            <p>Nuestro proceso comienza con una consulta detallada para entender tus deseos y el potencial de tu espacio. Luego, desarrollamos un concepto visual y un plan de acción para convertir tu visión en realidad, creando un oasis de tranquilidad justo en tu puerta.</p>
+
+                            <div class="row g-3 mt-4">
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <a href="img/residencial-1.jpeg" data-lightbox="residencial-gallery" data-title="Jardín residencial moderno">
+                                        <img src="img/residencial-1.jpeg" class="img-fluid rounded shadow-sm" alt="Jardín residencial moderno">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <a href="img/residencial-2.jpeg" data-lightbox="residencial-gallery" data-title="Patio con plantas y fuente">
+                                        <img src="img/residencial-2.jpeg" class="img-fluid rounded shadow-sm" alt="Patio con plantas y fuente">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <a href="img/residencial-3.jpeg" data-lightbox="residencial-gallery" data-title="Terraza con vegetación exuberante">
+                                        <img src="img/residencial-3.jpeg" class="img-fluid rounded shadow-sm" alt="Terraza con vegetación exuberante">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <a href="img/residencial-4.jpeg" data-lightbox="residencial-gallery" data-title="Patio delantero con diseño paisajístico">
+                                        <img src="img/residencial-4.jpeg" class="img-fluid rounded shadow-sm" alt="Patio delantero con diseño paisajístico">
+                                    </a>
+                                </div>
+                                </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/pasto2.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Venta de Rollo de Pasto</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/rollo1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#pasto"><i class="fa fa-link"></i></a>
-                            </div>
+
+                        <div class="tab-pane fade" id="comercial" role="tabpanel" aria-labelledby="comercial-tab">
+                            <h3>Diseño Comercial</h3>
+                            <p>Creamos <b>espacios verdes atractivos y funcionales para negocios y empresas</b>. Un diseño paisajístico bien ejecutado puede mejorar significativamente la imagen de tu marca, atraer y retener clientes, y proporcionar un ambiente agradable y productivo para empleados y visitantes. Es ideal para restaurantes, hoteles, oficinas corporativas, centros comerciales, complejos de apartamentos y parques empresariales.</p>
+                            <p>Nos enfocamos en diseños que no solo embellecen, sino que también son fáciles de mantener y que reflejan la identidad de tu negocio. Desde entradas impactantes hasta áreas de descanso al aire libre, diseñamos soluciones que maximizan el impacto visual y la utilidad.</p>
+
+                            <div class="row g-3 mt-4">
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <a href="img/comercial-1.jpg" data-lightbox="comercial-gallery" data-title="Entrada de oficina con paisajismo">
+                                        <img src="img/comercial-1.jpg" class="img-fluid rounded shadow-sm" alt="Entrada de oficina con paisajismo">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <a href="img/comercial-2.jpg" data-lightbox="comercial-gallery" data-title="Jardín interior en centro comercial">
+                                        <img src="img/comercial-2.jpg" class="img-fluid rounded shadow-sm" alt="Jardín interior en centro comercial">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <a href="img/comercial-3.jpg" data-lightbox="comercial-gallery" data-title="Área verde en hotel">
+                                        <img src="img/comercial-3.jpg" class="img-fluid rounded shadow-sm" alt="Área verde en hotel">
+                                    </a>
+                                </div>
+                                </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/mto2.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Mantenimiento de Jardines</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#mtojardin"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/frutal1.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Venta de Arboles Frutales</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/frutal1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#arbfrutas"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/jardineriares2.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Jardinería Residencial</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/jardineriar1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="service.html#jardineriares"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
+
+
                     </div>
                 </div>
             </div>
