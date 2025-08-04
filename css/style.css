@@ -1,11 +1,11 @@
 /********** Template CSS **********/
-:root {
-    --primary: #348E38;
-    --secondary: #525368;
-    --light: #E8F5E9;
-    --dark: #0F4229;
-}
 
+:root {
+  --color-primario: #008000;
+  --color-acento: #FFD700;
+  --color-texto: #333333;
+  --color-blanco: #FFFFFF;
+}
 .back-to-top {
     position: fixed;
     display: none;
